@@ -1,9 +1,9 @@
 ﻿Console.WriteLine();
-string[] sourseArray = {"a","25524555", "-56", "logi", "mine God", "dog", "62252", "+698524" };
+string[] sourseArray = {"a","25524555", "-56", "login", "mine God", "dogg", "622", "+698524" };
 
-Console.WriteLine($"Исходный массив: {'['+string.Join(" ,", sourseArray)+']'}");
+Console.WriteLine($"Исходный массив: {'['+string.Join(" ,", sourseArray)+']'}"); // Вывод исходного массива на экран
 
-void CutArray(string[] array)
+void CutArray(string[] array) // Метод, который будет отсекать элементы с длинной более 3-х символов
 {
     string[] cutArray = new string[array.Length];
     for (int i = 0; i < array.Length; i++)
@@ -13,7 +13,7 @@ void CutArray(string[] array)
             cutArray[i] = array[i];
         }
     } 
-    Console.Write($"Сокращенный массив: {'['+string.Join(" ", cutArray)+']'}");
+    Console.Write($"Сокращенный массив: {'['+string.Join(" ", cutArray)+']'}"); 
 }
 CutArray(sourseArray);
 
